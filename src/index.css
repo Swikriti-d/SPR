@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+:root{
+    --primary: #001736;
+    --secondary: #B71329;
+    --border: white;
+}
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.header {
+    letter-spacing: 0.038px;
+    font-weight: 500;
+    line-height: 22.5px;
+    font-size: 20px;
+}
+nav ul li:active {
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 4px;
+}
+.btn {
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 24px;
+    font-weight: 600;
+}
