@@ -4,8 +4,15 @@
     --primary: #001736;
     --secondary: #B71329;
     --border: white;
+    --body:#44474D;
+    --badge-1:#000F25;
+    --badge-2:#FFDEAE;
+    --badge-text:#281900;
 }
 
 * {
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+P{
+    text-align: justify;
 }

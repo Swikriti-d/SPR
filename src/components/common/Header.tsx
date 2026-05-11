@@ -7,7 +7,7 @@ const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <nav className="relative container mx-auto flex items-center justify-between py-3 px-3 font-medium text-xl">
+    <nav className=" container relative mx-auto flex items-center justify-between py-3 px-3 font-medium text-xl">
 
       <img src="src/assets/image/logo.png" alt="Logo" className="h-16 md:h-20" />
 

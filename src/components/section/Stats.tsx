@@ -26,7 +26,7 @@ const Stats = () => {
     <section className="relative z-20 -mt-20 px-6">
       
       {/* Floating Card */}
-      <div className="max-w-7xl mx-auto bg-white shadow-2xl rounded-2xl grid grid-cols-2 md:grid-cols-4 gap-6 p-6 
+      <div className="container mx-auto bg-white shadow-2xl rounded-lg grid grid-cols-2 md:grid-cols-4 gap-6 p-6 
       md:p-10 transform -translate-y-2">
 
         {stats.map((item, index) => (

@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1000px] px-6 sm:px-10 md:px-20 lg:px-32">
+      <div className="container relative z-10 max-w-[1050px] px-6 sm:px-10 md:px-20 lg:px-48">
         {/* Heading */}
         <h1 className="font-bold italic leading-tight text-5xl md:text-6xl lg:text-7xl">
           A Kinetic <br />
