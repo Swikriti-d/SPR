@@ -23,7 +23,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="relative z-20 -mt-20 px-6">
+    <section className="relative z-20 -mt-20 px-6 sm:px-10 md:px-20 lg:px-28">
       
       {/* Floating Card */}
       <div className="container mx-auto bg-white shadow-2xl rounded-lg grid grid-cols-2 md:grid-cols-4 gap-6 p-6 

@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-start text-white pb-8">
+    <section className="relative min-h-[90vh] flex items-center justify-start text-white pb-8">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img src="src/assets/image/heroImage.png" alt="hero" className="h-full w-full object-cover" />
@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 max-w-[1050px] px-6 sm:px-10 md:px-20 lg:px-48">
+      <div className="container relative z-10 max-w-[1000px] w-full py-18 px-6 sm:px-10 md:px-20 lg:px-30 mb-15">
         {/* Heading */}
         <h1 className="font-bold italic leading-tight text-5xl md:text-6xl lg:text-7xl">
           A Kinetic <br />
