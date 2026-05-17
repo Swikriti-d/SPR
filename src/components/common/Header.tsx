@@ -2,12 +2,15 @@ import { useState } from "react";
 import Button from "../ui/Button";
 import NavMenu from "./NavMenu";
 import { Menu, X } from "lucide-react";
+import Container from "./Container";
 
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <nav className=" container relative mx-auto flex items-center justify-between px-6 sm:px-10 md:px-20 lg:px-30 py-2 font-medium text-xl">
+    <header>
+      <Container className="relative py-2">
+      <nav className="relative flex items-center justify-between font-medium text-xl">
 
       <img src="src/assets/image/logo.png" alt="Logo" className="h-16 md:h-20" />
 
@@ -38,7 +41,9 @@ const Header = () => {
           <Button text="Donate" />
         </div>
       )}
-    </nav>
+      </nav>
+      </Container>
+    </header>
   );
 };
 

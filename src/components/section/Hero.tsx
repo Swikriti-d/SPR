@@ -2,10 +2,11 @@
 
 import Button from "../ui/Button";
 import { ArrowRight } from "lucide-react";
+import Container from "../common/Container";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center text-white px-6 sm:px-10 md:px-20 lg:px-30">
+    <section className="relative flex min-h-[90vh] items-center text-white">
 
   {/* Background */}
   <div className="absolute inset-0">
@@ -19,7 +20,7 @@ const Hero = () => {
   </div>
 
   {/* Content */}
-  <div className="container mx-auto relative z-10 py-18">
+  <Container className="relative z-10 py-18">
 
     <div className="max-w-[1000px]">
 
@@ -43,7 +44,7 @@ const Hero = () => {
   />
 </div>
     </div>
-  </div>
+  </Container>
 </section>
   );
 };

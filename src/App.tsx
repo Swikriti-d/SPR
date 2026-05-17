@@ -11,9 +11,7 @@ const App = () => {
     <div>
       <Header />
       <Hero />
-      <div className="relative z-20 -mt-20 px-6 sm:px-10 md:px-20 lg:px-28">
       <Stats />
-      </div>
       <FoundationStrategy />
       <Services />
       <UpcomingEvents />

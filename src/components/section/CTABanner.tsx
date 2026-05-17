@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import Container from "../common/Container";
 
 const CTABanner = () => {
   return (
@@ -15,7 +16,7 @@ const CTABanner = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* CONTENT */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 sm:px-10 md:px-20 lg:px- 30 py-16">
+      <Container className="absolute inset-0 flex flex-col items-center justify-center py-16 text-center">
 
         <h2 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold italic leading-tight">
           “Make a donation and help us bring change where it’s needed most.”
@@ -25,7 +26,7 @@ const CTABanner = () => {
           <Button text="Donate Now" />
         </div>
 
-      </div>
+      </Container>
     </section>
   );
 };

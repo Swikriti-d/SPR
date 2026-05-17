@@ -1,17 +1,17 @@
 import { BadgeCheck, UsersRound } from 'lucide-react';
+import Container from '../common/Container';
+import SectionTitle from '../common/SectionTitle';
 
 const FoundationStrategy = () => {
 return (
-<section className="py-16 px-6">
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
+<section className="py-16">
+    <Container>
+    <div className="flex flex-col gap-10 md:flex-row">
         
         {/* LEFT */}
         <div className="flex-1 space-y-8">
             <div>
-                <h2 className="relative text-3xl md:text-4xl font-extrabold text-[var(--primary)] pb-4">
-                    Our Foundation Strategy
-                    <span className="absolute left-0 bottom-0 h-1 w-20 rounded-full bg-[var(--secondary)]"></span>
-                </h2>
+                <SectionTitle title="Our Foundation Strategy" />
                 <p className="text-[var(--body)] leading-relaxed text-base sm:text-lg mt-8">
                     SPR Foundation operates on the principle of The Unified Sudurpaschim.
                     We move beyond localized aid to create a province-wide network of resilience.
@@ -55,7 +55,7 @@ return (
         <div className="flex-1 flex gap-4">
             {/* LEFT COLUMN */}
             <div className="flex flex-col gap-4 flex-1">
-                <div className="flex-3 min-h-[120px] overflow-hidden">
+                <div className="flex-[3] min-h-[120px] overflow-hidden">
                     <img src="src/assets/image/GROUP1.png"
                         className="w-full h-full object-cover" alt="Women in traditional dress" />
                 </div>
@@ -72,13 +72,14 @@ return (
                         Driven by Legacy, Built for Future.
                     </p>
                 </div>
-                <div className="flex-3 min-h-[120px] overflow-hidden">
+                <div className="flex-[3] min-h-[120px] overflow-hidden">
                     <img src="src/assets/image/stadium.png"
                         className="w-full h-full object-cover" alt="Stadium" />
                 </div>
             </div>
         </div>
     </div>
+    </Container>
 </section>
 );
 };

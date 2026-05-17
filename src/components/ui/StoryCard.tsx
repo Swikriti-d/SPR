@@ -19,7 +19,7 @@ const StoryCard = ({
         
         {/* BADGE */}
         {badge && (
-          <span className="absolute top-4 left-4 bg-(--secondary) text-white text-xs font-semibold px-3 py-1 rounded-full z-10">
+          <span className="absolute left-4 top-4 z-10 rounded-full bg-[var(--secondary)] px-3 py-1 text-xs font-semibold text-white">
             {badge}
           </span>
         )}
@@ -33,7 +33,7 @@ const StoryCard = ({
 
       {/* CONTENT */}
       <div className="mt-5">
-        <h3 className="text-2xl font-bold text-(--primary)">
+        <h3 className="text-2xl font-bold text-[var(--primary)]">
           {title}
         </h3>
 

@@ -1,5 +1,7 @@
 import StoryCard from "../ui/StoryCard.tsx"
 import {ArrowUpRight,} from "lucide-react";
+import Container from "../common/Container";
+import SectionTitle from "../common/SectionTitle";
 const stories = [
 {
 image: "src/assets/image/story1.jpg",
@@ -28,18 +30,15 @@ badge: "INTERVIEW",
 
 const CommunityStories = () => {
 return (
-<section className="bg-white px-6 sm:px-10 md:px-20 lg:px-30 py-16">   
+<section className="bg-white py-16">  
+    <Container>
 
         {/* TOP HEADER */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
 
             {/* LEFT SIDE */}
             <div className="space-y-7 max-w-[620px]">
-
-                <h2 className="relative text-3xl md:text-4xl font-extrabold text-[var(--primary)] pb-4">
-                    Community Stories
-                    <span className="absolute left-0 bottom-0 h-1 w-20 rounded-full bg-[var(--secondary)]"></span>
-                </h2>
+                <SectionTitle title="Community Stories" />
 
                 <p className="text-[var(--body)] text-lg leading-relaxed">
                     Real impact, told by the people who live it.
@@ -63,6 +62,7 @@ return (
             ))}
 
         </div>
+        </Container>
 </section>
 )
 }

@@ -3,6 +3,8 @@ ArrowUpRight,
 Calendar,
 MapPin,
 } from "lucide-react";
+import Container from "../common/Container";
+import SectionTitle from "../common/SectionTitle";
 
 const events = [
 {
@@ -26,22 +28,16 @@ location: "Sudurpaschim, Nepal",
 
 const UpcomingEvents = () => {
 return (
-<section className="bg-white py-16 px-6">
-    <div className="max-w-7xl mx-auto">
+<section className="bg-white py-16">
+    <Container>
 
         {/* tittle */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
 
             <div className="space-y-7 max-w-[620px]">
+                <SectionTitle title="Upcoming Events" />
 
-                <h2 className="relative text-3xl md:text-4xl font-extrabold text-[var(--primary)] pb-4">
-
-                    Upcoming Events
-
-                    <span className="absolute left-0 bottom-0 h-1 w-20 rounded-full bg-(--secondary)"></span>
-                </h2>
-
-                <p className="text-(--body) text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed text-[var(--body)]">
                     Explore what’s coming next in our journey of impact.
                 </p>
             </div>
@@ -98,7 +94,7 @@ return (
 
                         {/* BUTTON */}
                         <button type="button"
-                            className="border border-(--primary) px-5 py-2 rounded-full text-base text-[var(--primary)] hover:bg-[var(--secondary)] hover:text-white transition-all duration-300">
+                            className="rounded-full border border-[var(--primary)] px-5 py-2 text-base text-[var(--primary)] transition-all duration-300 hover:bg-[var(--secondary)] hover:text-white">
                             Learn More
                         </button>
 
@@ -107,7 +103,7 @@ return (
             </div>
             ))}
         </div>
-    </div>
+    </Container>
 </section>
 );
 };

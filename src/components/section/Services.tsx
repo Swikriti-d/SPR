@@ -1,6 +1,8 @@
 import {
 GraduationCap, Trophy, Megaphone, ArrowUpRight, BriefcaseMedical,
 } from "lucide-react";
+import Container from "../common/Container";
+import SectionTitle from "../common/SectionTitle";
 
 const services = [
 {
@@ -45,24 +47,21 @@ features: [
 
 const Services = () => {
 return (
-<section className="bg-[#F5F5F5] px-6 sm:px-10 md:px-20 lg:px-30 py-16">
-  <div className="container mx-auto">
+<section className="bg-[#F5F5F5] py-16">
+  <Container>
 
     {/* Title */}
     <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
 
-      <div className="space-y-8 max-w-140 ">
-        <h2 className="relative text-3xl md:text-4xl font-extrabold text-[var(--primary)] pb-4">
-          Our Services
-          <span className="absolute left-0 bottom-0 h-1 w-20 rounded-4xl bg-[var(--secondary)]"></span>
-        </h2>
+      <div className="max-w-[560px] space-y-8">
+        <SectionTitle title="Our Services" />
 
         <p className="text-[var(--body)] leading-relaxed text-lg">
           Real-time initiatives currently transforming lives across the region. Explore our footprint of change.
         </p>
       </div>
 
-      <button type="button" className="flex items-center gap-2 text-(--secondary) font-semibold">
+      <button type="button" className="flex items-center gap-2 font-semibold text-[var(--secondary)]">
         View All Services
         <ArrowUpRight size={18} />
       </button>
@@ -81,7 +80,7 @@ return (
         {/* Content */}
         <div className="absolute bottom-0 left-0 p-8 text-white">
            <div className="mb-4">
-              <BriefcaseMedical size={40} className="text-(--secondary)" />
+              <BriefcaseMedical size={40} className="text-[var(--secondary)]" />
             </div>
           <p className="text-3xl leading-9 font-bold mb-4">
             Free Health Camps
@@ -102,18 +101,18 @@ return (
           <div className="flex flex-col items-start justify-center rounded-l-4xl p-9">
 
             <div className="mb-4">
-              <GraduationCap size={40} className="text-(--secondary)" />
+              <GraduationCap size={40} className="text-[var(--secondary)]" />
             </div>
 
-            <h3 className="text-2xl leading-8 font-bold text-(--primary) mb-4">
+            <h3 className="mb-4 text-2xl font-bold leading-8 text-[var(--primary)]">
               Women & Child Education
             </h3>
 
-            <p className="text-lg text-(--body) leading-7 mb-5">
+            <p className="mb-5 text-lg leading-7 text-[var(--body)]">
               Building a stronger future by educating and uplifting women and children.
             </p>
 
-            <button type="button" className="font-bold text-base text-(--primary) underline underline-offset-4">
+            <button type="button" className="text-base font-bold text-[var(--primary)] underline underline-offset-4">
               EXPLORE PROJECT
             </button>
           </div>
@@ -195,7 +194,7 @@ return (
         </div>
       </div>
     </div>
-  </div>
+  </Container>
 </section>
 );
 };
