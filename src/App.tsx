@@ -6,6 +6,9 @@ import Services from './components/section/Services'
 import UpcomingEvents from './components/section/UpcomingEvent.tsx'
 import CTABanner from './components/section/CTABanner.tsx'
 import CommunityStories from './components/section/CommunityStories.tsx'
+import Partners from './components/section/OurPartners.tsx'
+import ContactUs from './components/section/ContactUs.tsx'
+import Footer from './components/common/Footer.tsx'
 const App = () => {
   return (
     <div>
@@ -17,6 +20,9 @@ const App = () => {
       <UpcomingEvents />
       <CTABanner />
       <CommunityStories />
+      <Partners />
+      <ContactUs />
+      <Footer />  
     </div>
   )
 }
