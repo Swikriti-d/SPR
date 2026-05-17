@@ -60,7 +60,7 @@ return (
                         className="w-full h-full object-cover" alt="Women in traditional dress" />
                 </div>
                 <div
-                    className="flex-1 bg-[var(--badge-2)]  flex flex-col justify-center items-start flex-1">
+                    className="flex-1 bg-[var(--badge-2)] flex flex-col items-start justify-center px-3 py-2">
                     <h3 className="text-xl sm:text-2xl font-bold text-[var(--badge-text)]">09</h3>
                     <p className="text-lg sm:text-2xl font-bold text-[var(--badge-text)]">Districts Unified</p>
                 </div>
@@ -68,7 +68,7 @@ return (
             {/* RIGHT COLUMN */}
             <div className="flex flex-col gap-4 flex-1">
                 <div className="bg-[var(--badge-1)] px-3 sm:px-6 flex items-center justify-center flex-1">
-                    <p className="text-lg sm:text-2xl font-bold text-white text-center">
+                    <p className="text-lg sm:text-2xl font-bold text-white text-center py-2">
                         Driven by Legacy, Built for Future.
                     </p>
                 </div>
