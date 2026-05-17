@@ -5,41 +5,46 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-start text-white pb-8">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img src="src/assets/image/heroImage.png" alt="hero" className="h-full w-full object-cover" />
+    <section className="relative min-h-[90vh] flex items-center text-white px-6 sm:px-10 md:px-20 lg:px-30">
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
+  {/* Background */}
+  <div className="absolute inset-0">
+    <img
+      src="src/assets/image/heroImage.png"
+      alt="hero"
+      className="h-full w-full object-cover"
+    />
 
-      {/* Content */}
-      <div className="container relative z-10 max-w-[1000px] w-full py-18 px-6 sm:px-10 md:px-20 lg:px-30 mb-15">
-        {/* Heading */}
-        <h1 className="font-bold italic leading-tight text-5xl md:text-6xl lg:text-7xl">
-          A Kinetic <br />
-          <span className="text-[#E5C18B]">Legacy</span> of Hope
-        </h1>
+    <div className="absolute inset-0 bg-black/50"></div>
+  </div>
 
-        {/* Paragraph */}
-        <p className="mt-4 font-medium text-gray-300 
-        text-lg sm:text-lg md:text-lg lg:text-xl">
-          Rooted in the spirit of the game, dedicated to the heart of
-          Sudurpaschim. We bridge the gap between professional excellence and
-          grassroots empowerment.
-        </p>
+  {/* Content */}
+  <div className="container mx-auto relative z-10 py-18">
 
-        {/* Buttons */}
-       <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row">
-          <Button text="Join the Royal Movement"/>
+    <div className="max-w-[1000px]">
 
-          <Button text="Our Vision" variant="secondary" 
-          icon={<ArrowRight size={20} />}
-          />
-        </div>
-      </div>
-    </section>
+      <h1 className="font-bold italic leading-tight text-5xl md:text-6xl lg:text-7xl">
+        A Kinetic <br />
+        <span className="text-[#E5C18B]">Legacy</span> of Hope
+      </h1>
+
+      <p className="mt-4 text-lg lg:text-xl text-gray-300 leading-relaxed">
+        Rooted in the spirit of the game, dedicated to the heart of
+        Sudurpaschim.
+      </p>
+
+      <div className="mt-8 flex flex-col sm:flex-row gap-4">
+  <Button text="Join the Royal Movement" className="w-auto self-start" />
+  <Button
+    text="Our Vision"
+    variant="secondary"
+    icon={<ArrowRight size={20} />}
+    className="w-auto self-start"
+  />
+</div>
+    </div>
+  </div>
+</section>
   );
 };
 

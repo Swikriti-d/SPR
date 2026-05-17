@@ -1,52 +1,48 @@
-import { BadgeCheck } from 'lucide-react';
-import { UsersRound } from 'lucide-react';
+import { BadgeCheck, UsersRound } from 'lucide-react';
 
 const FoundationStrategy = () => {
 return (
-<section className="container px-6 sm:px-10 md:px-20 lg:px-30 py-16">
-
-    <div className="flex flex-col md:flex-row gap-14">
-
-        {/* LEFT SIDE */}
-        <div className="space-y-8 max-w-[690px] md:flex-1">
-            <h2 className="relative text-3xl md:text-4xl font-extrabold text-[var(--primary)] pb-4">
-                Our Foundation Strategy
-                <span className="absolute left-0 bottom-0 h-1 w-20 rounded-4xl bg-[var(--secondary)]"></span>
-            </h2>
-
-            <p className="text-[var(--body)] leading-relaxed text-lg">
-                SPR Foundation operates on the principle of The Unified Sudurpaschim .
-                We move beyond localized aid to create a province-wide network of resilience.
-                Our approach is purely data-driven, ensuring every rupee is tracked and every
-                project is measured against global sustainability benchmarks.
-            </p>
+<section className="py-16 px-6">
+    <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
+        
+        {/* LEFT */}
+        <div className="flex-1 space-y-8">
+            <div>
+                <h2 className="relative text-3xl md:text-4xl font-extrabold text-[var(--primary)] pb-4">
+                    Our Foundation Strategy
+                    <span className="absolute left-0 bottom-0 h-1 w-20 rounded-full bg-[var(--secondary)]"></span>
+                </h2>
+                <p className="text-[var(--body)] leading-relaxed text-base sm:text-lg mt-8">
+                    SPR Foundation operates on the principle of The Unified Sudurpaschim.
+                    We move beyond localized aid to create a province-wide network of resilience.
+                    Our approach is purely data-driven, ensuring every rupee is tracked and every
+                    project is measured against global sustainability benchmarks.
+                </p>
+            </div>
 
             <div className="space-y-6">
-                <div className="flex gap-6 items-start">
-                    <div className="p-2 flex items-center justify-center rounded-full bg-white shadow-md">
+                <div className="flex gap-4 items-start">
+                    <div className="p-2 rounded-full bg-white shadow flex items-center justify-center">
                         <BadgeCheck className="w-6 h-6 text-[var(--secondary)]" />
                     </div>
-
                     <div>
-                        <h4 className="font-bold text-[var(--primary)] text-lg">
+                        <h4 className="font-bold text-[var(--primary)] text-base sm:text-lg">
                             Integrity First
                         </h4>
-                        <p className="text-[var(--body)] text-lg">
+                        <p className="text-[var(--body)] text-base sm:text-lg">
                             We maintain a 'No-Boundary' transparency policy for every rupee donated and spent.
                         </p>
                     </div>
                 </div>
-
-                <div className="flex gap-6 items-start">
-                    <div className="p-2 flex items-center justify-center rounded-full bg-white shadow-md">
-                        <UsersRound className="w-6 h-5 text-[var(--secondary)]" />
+                <div className="flex gap-4 items-start">
+                    <div className="p-2 rounded-full bg-white shadow flex items-center justify-center">
+                        <UsersRound className="w-6 h-6 text-[var(--secondary)]" />
                     </div>
-
                     <div>
-                        <h4 className="font-bold text-[var(--primary)] text-lg">
+                        <h4 className="font-bold text-[var(--primary)] text-base sm:text-lg">
                             Community-Led
                         </h4>
-                        <p className="text-[var(--body)] text-lg">
+                        <p className="text-[var(--body)] text-base sm:text-lg">
                             Our projects are chosen and managed by local leaders to ensure cultural alignment and
                             longevity.
                         </p>
@@ -55,46 +51,36 @@ return (
             </div>
         </div>
 
-        {/* RIGHT SIDE */}
-        <div className="flex gap-3 md:gap-4 h-[360px] sm:h-[520px] md:flex-1">
-
+        {/* RIGHT */}
+        <div className="flex-1 flex gap-4">
             {/* LEFT COLUMN */}
-            <div className="flex flex-col gap-4 flex-[1]">
-
-                <div className="overflow-hidden flex-[3]">
-                    <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83"
+            <div className="flex flex-col gap-4 flex-1">
+                <div className="flex-3 min-h-[120px] overflow-hidden">
+                    <img src="src/assets/image/GROUP1.png"
                         className="w-full h-full object-cover" alt="Women in traditional dress" />
                 </div>
-                
-                <div className="bg-[var(--badge-2)] px-8 flex flex-col justify-center flex-[1]">
-                    <h3 className="text-2xl font-bold text-[var(--badge-text)]">09</h3>
-                    <p className="text-2xl font-bold text-[var(--badge-text)]">Districts Unified</p>
+                <div
+                    className="flex-1 bg-[var(--badge-2)]  flex flex-col justify-center items-start flex-1">
+                    <h3 className="text-xl sm:text-2xl font-bold text-[var(--badge-text)]">09</h3>
+                    <p className="text-lg sm:text-2xl font-bold text-[var(--badge-text)]">Districts Unified</p>
                 </div>
-
             </div>
-
-            {/* RIGHT COLUMN - narrower */}
-            <div className="flex flex-col gap-4 flex-[1]">
-
-                {/* TOP - navy text card (short) */}
-                <div className="bg-[var(--badge-1)] px-8 flex items-center flex-[1]">
-                    <p className="text-2xl font-bold text-white leading-relaxed text-center">
-                        Driven by Legacy,<br />Built for Future.
+            {/* RIGHT COLUMN */}
+            <div className="flex flex-col gap-4 flex-1">
+                <div className="bg-[var(--badge-1)] px-3 sm:px-6 flex items-center justify-center flex-1">
+                    <p className="text-lg sm:text-2xl font-bold text-white text-center">
+                        Driven by Legacy, Built for Future.
                     </p>
                 </div>
-
-                {/* BOTTOM - stadium image (tall) */}
-                <div className="overflow-hidden flex-[3]">
-                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211"
+                <div className="flex-3 min-h-[120px] overflow-hidden">
+                    <img src="src/assets/image/stadium.png"
                         className="w-full h-full object-cover" alt="Stadium" />
                 </div>
-
             </div>
-
         </div>
     </div>
 </section>
-)
-}
+);
+};
 
-export default FoundationStrategy
+export default FoundationStrategy;

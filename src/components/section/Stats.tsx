@@ -23,11 +23,10 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="relative z-20 -mt-20 px-6 sm:px-10 md:px-20 lg:px-28">
+    <section >
       
       {/* Floating Card */}
-      <div className="container mx-auto bg-white shadow-2xl rounded-lg grid grid-cols-2 md:grid-cols-4 gap-6 p-6 
-      md:p-10 transform -translate-y-2">
+      <div className="container mx-auto px-4 bg-white shadow-2xl rounded-lg grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 p-4 sm:p-6 md:p-10 transform -translate-y-2">
 
         {stats.map((item, index) => (
           <div key={index} className="text-center flex flex-col items-center justify-center gap-2">

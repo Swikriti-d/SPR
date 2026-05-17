@@ -7,6 +7,7 @@ type ButtonProps = {
   variant?: "primary" | "secondary" | "iconBtn";
   icon?: ReactNode;
   iconPosition?: "left" | "right";
+  className?: string;
 };
 
 const Button = ({
@@ -14,6 +15,7 @@ const Button = ({
   variant = "primary",
   icon,
   iconPosition = "right",
+  className = "",
 }: ButtonProps) => {
   const styles =
     variant === "primary"
@@ -25,7 +27,7 @@ const Button = ({
   return (
     <button
       className={`inline-flex items-center gap-2 text-lg sm:text-lg md:text-xl font-semibold px-8 sm:px-8 md:px-10
-      py-3 sm:py-4 rounded-full transition duration-300 ${styles}`} >
+      py-3 sm:py-4 rounded-full transition duration-300 ${styles} ${className}`} >
         
       {/* Left Icon */}
       {icon && iconPosition === "left" && (
