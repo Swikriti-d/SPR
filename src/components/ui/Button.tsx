@@ -1,5 +1,3 @@
-// src/components/ui/Button.tsx
-
 import type { ReactNode } from "react";
 
 type ButtonProps = {
@@ -8,6 +6,7 @@ type ButtonProps = {
   icon?: ReactNode;
   iconPosition?: "left" | "right";
   className?: string;
+  onClick?: () => void;
 };
 
 const Button = ({
@@ -16,6 +15,7 @@ const Button = ({
   icon,
   iconPosition = "right",
   className = "",
+  onClick,
 }: ButtonProps) => {
   const styles =
     variant === "primary"
@@ -26,20 +26,14 @@ const Button = ({
 
   return (
     <button
-      className={`inline-flex items-center gap-2 text-lg sm:text-lg md:text-xl font-semibold px-8 sm:px-8 md:px-10
-      py-3 sm:py-4 rounded-full transition duration-300 ${styles} ${className}`} >
-        
-      {/* Left Icon */}
-      {icon && iconPosition === "left" && (
-        <span className="text-xl">{icon}</span>
-      )}
+      onClick={onClick}
+      className={`inline-flex items-center gap-2 font-semibold px-8 py-3 rounded-full transition duration-300 ${styles} ${className}`}
+    >
+      {icon && iconPosition === "left" && <span>{icon}</span>}
 
       <span>{text}</span>
 
-      {/* Right Icon */}
-      {icon && iconPosition === "right" && (
-        <span className="text-xl">{icon}</span>
-      )}
+      {icon && iconPosition === "right" && <span>{icon}</span>}
     </button>
   );
 };
