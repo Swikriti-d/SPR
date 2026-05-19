@@ -1,10 +1,9 @@
-// src/components/sections/Hero.tsx
 
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 import { ArrowRight } from "lucide-react";
-import Container from "../common/Container";
+import Container from "../../common/Container";
 
-const Hero = () => {
+const Banner = () => {
   return (
     <section className="relative min-h-[85vh] text-white">
       
@@ -52,4 +51,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Banner;

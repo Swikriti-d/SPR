@@ -1,5 +1,5 @@
-import Button from "../ui/Button";
-import Container from "../common/Container";
+import Button from "../../ui/Button";
+import Container from "../../common/Container";
 
 const CTABanner = () => {
   return (

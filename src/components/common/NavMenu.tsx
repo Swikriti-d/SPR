@@ -1,8 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 type NavMenuProps = {
   onClick?: () => void;
 };
+
+const menuItems = [
+  { name: "Home", link: "/" },
+  { name: "About", link: "/About" },
+  { name: "Programs", link: "/Programs" },
+  { name: "Impact", link: "/Impact" },
+  { name: "News", link: "/News" },
+  { name: "Contact", link: "/Contact" },
+];
 
 const NavMenu: React.FC<NavMenuProps> = ({ onClick }) => {
   const navItem =
@@ -10,12 +20,13 @@ const NavMenu: React.FC<NavMenuProps> = ({ onClick }) => {
 
   return (
     <>
-      <li className={navItem} onClick={onClick}>Home</li>
-      <li className={navItem} onClick={onClick}>About</li>
-      <li className={navItem} onClick={onClick}>Programs</li>
-      <li className={navItem} onClick={onClick}>Impact</li>
-      <li className={navItem} onClick={onClick}>News</li>
-      <li className={navItem} onClick={onClick}>Contact</li>
+      {menuItems.map((item) => (
+        <li key={item.name}>
+          <a href={item.link} className={navItem} onClick={onClick}>
+            {item.name}
+          </a>
+        </li>
+      ))}
     </>
   );
 };

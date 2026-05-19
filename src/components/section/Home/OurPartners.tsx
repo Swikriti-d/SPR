@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import SectionTitle from "../common/SectionTitle";
+import SectionTitle from "../../common/SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";

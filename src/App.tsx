@@ -1,30 +1,28 @@
 import Header from './components/common/Header'
-import Hero from './components/section/Hero.tsx'
-import Stats from './components/section/Stats.tsx'
-import FoundationStrategy from './components/section/FoundationStrategy.tsx'
-import Services from './components/section/Services'
-import UpcomingEvents from './components/section/UpcomingEvent.tsx'
-import CTABanner from './components/section/CTABanner.tsx'
-import CommunityStories from './components/section/CommunityStories.tsx'
-import Partners from './components/section/OurPartners.tsx'
-import ContactUs from './components/section/ContactUs.tsx'
-import Footer from './components/common/Footer.tsx'
+import Footer from './components/common/Footer'
+
+import { Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import About from './pages/About' 
+// import Events from './pages/Events'
+// import Contact from './pages/Contact'
+
 const App = () => {
   return (
     <div>
       <Header />
-      <Hero />
-      <Stats />
-      <FoundationStrategy />
-      <Services />
-      <UpcomingEvents />
-      <CTABanner />
-      <CommunityStories />
-      <Partners />
-      <ContactUs />
-      <Footer />  
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/events" element={<Events />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+
+      <Footer />
     </div>
   )
 }
 
-export default App;
+export default App

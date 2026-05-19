@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../common/Container";
+import Container from "../../common/Container";
 import { ChevronDown } from "lucide-react";
 
 const ContactUs: React.FC = () => {

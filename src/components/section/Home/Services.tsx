@@ -6,8 +6,8 @@ import {
   BriefcaseMedical,
 } from "lucide-react";
 
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
 
 const services = [
   {

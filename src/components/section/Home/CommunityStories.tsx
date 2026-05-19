@@ -1,7 +1,7 @@
-import StoryCard from "../ui/StoryCard.tsx"
+import StoryCard from "../../ui/StoryCard.tsx"
 import {ArrowUpRight,} from "lucide-react";
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
+import Container from "../../common/Container.tsx";
+import SectionTitle from "../../common/SectionTitle.tsx";
 const stories = [
 {
 image: "src/assets/image/story1.jpg",
