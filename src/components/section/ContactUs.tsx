@@ -1,20 +1,17 @@
 import React from "react";
 import Container from "../common/Container";
+import { ChevronDown } from "lucide-react";
 
 const ContactUs: React.FC = () => {
-  const handleButtonClick = (
-    e: React.MouseEvent<HTMLButtonElement>
-  ) => {
+  const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
   };
 
   return (
     <section className="py-16">
       <Container>
-
         {/* INNER BOX */}
         <div className="bg-[#031637] rounded-4xl px-6 md:px-12 py-8 md:py-12 flex flex-col md:flex-row items-center gap-6 md:gap-10">
-
           {/* LEFT CONTENT */}
           <div className="flex-1 text-white">
             <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -22,17 +19,14 @@ const ContactUs: React.FC = () => {
             </h2>
 
             <p className="text-lg sm:text-xl font-medium max-w-md text-white/80">
-              Whether you wish to volunteer, donate, or partner with us,
-              give suggestion, your journey as a "Royals Loyal"
-              starts here.
+              Whether you wish to volunteer, donate, or partner with us, give
+              suggestion, your journey as a "Royals Loyal" starts here.
             </p>
           </div>
 
           {/* FORM */}
           <div className="flex-1 bg-white rounded-3xl p-4 sm:p-6 md:p-8 shadow-md w-full max-w-md">
-
             <form className="space-y-4">
-
               {/* FULL NAME */}
               <div>
                 <label
@@ -53,7 +47,6 @@ const ContactUs: React.FC = () => {
 
               {/* EMAIL + CONTACT */}
               <div className="flex flex-col sm:flex-row gap-4">
-
                 <div className="w-full sm:w-1/2">
                   <label
                     htmlFor="email"
@@ -87,7 +80,6 @@ const ContactUs: React.FC = () => {
                     className="w-full rounded-md bg-[#F4F3F7] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#031637] transition"
                   />
                 </div>
-
               </div>
 
               {/* SELECT */}
@@ -99,17 +91,23 @@ const ContactUs: React.FC = () => {
                   How Would You Like To Help?
                 </label>
 
-                <select
-                  id="helpType"
-                  defaultValue="Volunteer Program"
-                  required
-                  className="w-full rounded-md bg-[#F4F3F7] text-[#44474D] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#031637] transition"
-                >
-                  <option>Volunteer Program</option>
-                  <option>Donation</option>
-                  <option>Partner with Us</option>
-                  <option>Suggestion</option>
-                </select>
+                <div className="relative">
+                  <select
+                    id="helpType"
+                    defaultValue="Volunteer Program"
+                    required
+                    className="w-full appearance-none rounded-md bg-[#F4F3F7] text-[#44474D] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#031637] transition"
+                  >
+                    <option>Volunteer Program</option>
+                    <option>Donation</option>
+                    <option>Partner with Us</option>
+                    <option>Suggestion</option>
+                  </select>
+                  <ChevronDown
+                    className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-[#44474D]"
+                    size={20}
+                  />
+                </div>
               </div>
 
               {/* MESSAGE */}
@@ -137,7 +135,6 @@ const ContactUs: React.FC = () => {
               >
                 Submit
               </button>
-
             </form>
           </div>
         </div>
