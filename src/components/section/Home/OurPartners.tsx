@@ -14,7 +14,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section className="bg-[#F5F5F5] py-16">
+    <section className="bg-[var(--bg-color)] py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
         {/* TITLE */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">

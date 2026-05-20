@@ -15,7 +15,7 @@ const services = [
     description:
       "Building a stronger future by educating and uplifting women and children.",
     icon: <GraduationCap size={30} />,
-    bg: "bg-[#F3F3F3]",
+    bg: "bg-[var(--bg-color)]",
     text: "text-[var(--primary)]",
     features: [],
   },
@@ -33,7 +33,7 @@ const services = [
     description:
       "Creating awareness to support social change and protect vulnerable lives.",
     icon: <Megaphone size={30} />,
-    bg: "bg-[#F3F3F3]",
+    bg: "bg-[var(--bg-color)]",
     text: "text-[var(--primary)]",
     features: [
       "Ending Chaupadi",
@@ -45,7 +45,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-[#F5F5F5] py-16">
+    <section className="bg-[var(--bg-color)] py-16">
       <Container>
 
         {/* TITLE */}

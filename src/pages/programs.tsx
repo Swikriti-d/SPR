@@ -3,15 +3,6 @@ import CorePrograms from "../components/section/Program/CoreProgram";
 import Data from "../components/section/Program/DataDriven";
 
 const Programs = () => {
-
-  const handleJoin = () => {
-    alert("Thanks for joining!");
-  };
-
-  const handleLearnMore = () => {
-    alert("Redirecting to more info...");
-  };
-
   return (
     <div>
       <Hero

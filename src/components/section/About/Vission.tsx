@@ -3,7 +3,7 @@ import SectionTitle from "../../common/SectionTitle";
 
 const VisionSection = () => {
   return (
-    <section className="py-16">
+    <section className=" bg-[var(--bg-color)] py-16">
       <Container>
         <div className="flex flex-col md:flex-row gap-10 items-stretch">
 
