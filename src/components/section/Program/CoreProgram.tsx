@@ -69,7 +69,7 @@ const CorePrograms = () => {
                 </div>
 
                 {/* BADGE */}
-                <div className="absolute -bottom-9 right-5 bg-white rounded-xl shadow-xl px-6 py-6 flex items-center gap-3">
+                <div className="absolute -bottom-9 right-5 bg-white rounded-xl shadow-xl px-6 py-6 flex items-center gap-3 ">
                   <div className="p-2 rounded-full bg-[var(--badge-2)] flex items-center justify-center">
                     <program.badge.icon className="w-4 h-4 text-[var(--badge-text)]" />
                   </div>
