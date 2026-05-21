@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronDown, Send } from "lucide-react";
 
-const ContactForm: React.FC = () => {
+const Form: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
   };
@@ -86,4 +86,4 @@ const ContactForm: React.FC = () => {
   );
 };
 
-export default ContactForm;
+export default Form;

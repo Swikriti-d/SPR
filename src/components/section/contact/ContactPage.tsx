@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../../components/common/Container";
 import SectionTitle from "../../../components/common/SectionTitle";
-import ContactForm from "../../../components/common/ContactForm";
+import Form from "../../../components/common/Form";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
@@ -68,8 +68,8 @@ const ContactPage: React.FC = () => {
             </div>
 
             {/* RIGHT — form */}
-            <div className="flex-1 bg-white rounded-3xl shadow- p-6 sm:p-8 w-full border border-gray-200">
-              <ContactForm />
+            <div className="flex-1 bg-white rounded-3xl shadow-lg p-6 sm:p-8 w-full border border-gray-200">
+              <Form />
             </div>
 
           </div>
